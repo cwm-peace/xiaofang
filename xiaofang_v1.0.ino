@@ -2913,7 +2913,7 @@ void setup() {
 
 
 /////////////////调试2
-  #ifndef DEBUG
+  #ifdef DEBUG
     //点阵测试函数，用完注释掉就行了
     LED_TEST();
   #endif
