@@ -1,5 +1,8 @@
 # xiaofang
 小方1.0-巴掌宽护胸毛
+这是一个桌面电子沙漏小摆件，分辨率8x8，使用一个方块像素点阵做显示，尺寸32mmx32mmx15mm。
+
+
 主要工程文件时xiaofang_v1.0.ino，是ArduinoIDE里写的，直接用Arduino打开即可。然后需要把这几个文件夹放到Arduino的libraries文件夹里，这几个文件夹都是使用到的相关库文件（basicMPU6050、iic_16k、ip5306ck、LedControl、LowPower、she）。
 库文件描述：
 
