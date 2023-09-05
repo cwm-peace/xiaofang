@@ -2360,6 +2360,9 @@ void power_down(){
           lc.bitmap(lc.LedBuffer_work);//复原退出时的画面
           lc.UpLoad();
         }
+	if(migong_state||she_state){//如果之前是从是迷宫或者蛇进入的休眠，那恢复时需要强制恢复重力方向为默认的3，否则控制方向会乱
+          lc.zhonglifangxiang=3;
+        }
      detachInterrupt(digitalPinToInterrupt(2)); //取消中断
 }
 
