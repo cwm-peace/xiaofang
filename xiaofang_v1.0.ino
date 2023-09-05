@@ -2345,6 +2345,9 @@ void power_down(){
       digitalWrite(9,HIGH);
       delay(300);
       int bat_v=bat.bat_state();
+      lc.bitmap(bat_bitmap[bat_v]);//把当前电量信息写入显存
+      lc.UpLoad();刷新画面
+	
         //设置每次动画结束后的间隔时长
         for(int i=0;i<3000;i++){
             zhonglifangxiang_panduan();
